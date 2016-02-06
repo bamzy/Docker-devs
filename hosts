@@ -1,0 +1,2 @@
+# change * to your real username in ubuntu
+machine ansible_connection=local sudo_user=*

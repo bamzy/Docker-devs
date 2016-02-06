@@ -1,0 +1,6 @@
+---
+- name: add apt cache config file
+  copy:
+    dest: /etc/apt/apt.conf.d/02proxy
+    src: 02proxy
+  sudo: yes

@@ -1,0 +1,16 @@
+---
+- name: add ansible ppa key
+  apt_key: 
+    keyserver: keyserver.ubuntu.com
+    id: 7BB9C367
+  sudo: yes
+- name: add ansible ppa
+  apt_repository:
+    repo: "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
+    state: present
+  sudo: yes
+- name: install ansible
+  apt:
+    name: ansible
+    state: present
+  sudo: yes

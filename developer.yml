@@ -1,0 +1,12 @@
+---
+- hosts: machine
+  roles:
+  # comment or uncomment each role based on your needs
+  # add this role to ensure you use our cache for apt-get
+  - apt-pkg-cache
+  # add this role to install latest version of docker
+  - docker
+  # add this role to install latest version of docker-compose
+  - docker-compose
+  # add this role to install latest version of ansible
+  - ansible
